@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a6e09b"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="#122334" >
+
+        <ImageView
+            android:id="@+id/iv_portrait_title"
+            android:layout_width="48dip"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/tv_title"
+            android:layout_marginRight="10dip"
+            android:padding="5dip"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="#e0FFFFFF"
+            android:layout_centerInParent="true"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="48dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/ic_menu_more" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_input"
+        android:layout_below="@+id/rl_title"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
+
+        <!--  -->
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_above="@+id/rl_ad"
+        android:background="#ececec"
+        android:gravity="center_vertical" >
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/btn_submit"
+            android:background="#ffffff"
+            android:hint="帮助"
+            android:padding="6dip"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textColorHint="@android:color/holo_blue_dark" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="60dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="#BBBBBB"
+            android:text="确认"
+            android:textColor="#ffffff"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_speaker"
+            android:layout_width="60dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:padding="3dip"
+            android:src="@drawable/speaker"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_ad"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="#ececec"
+        android:gravity="center_vertical"
+        android:visibility="invisible" >
+    </RelativeLayout>
+
+</RelativeLayout>

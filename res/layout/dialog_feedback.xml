@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dip"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:background="#ffffff"
+        android:gravity="top"
+        android:hint="姓名"
+        android:padding="5dip"
+        android:textColor="#CCCCCC"
+        android:textColorHint="#00a2e8"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#00a2e8" />
+
+    <EditText
+        android:id="@+id/et_qq"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+               android:background="#ffffff"
+        android:gravity="top"
+        android:hint="QQ"
+        android:inputType="number"
+        android:padding="5dip"
+        android:textColor="#CCCCCC"
+        android:textColorHint="#00a2e8"
+        android:textSize="15sp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#00a2e8" />
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:background="#ffffff"
+        android:gravity="top"
+        android:hint="感谢您的反馈"
+        android:padding="5dip"
+        android:textColor="#CCCCCC"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="#CC3333"
+        android:text="@string/send"
+        android:textColor="#CCCCCC"
+        android:textSize="15sp" />
+
+</LinearLayout>
